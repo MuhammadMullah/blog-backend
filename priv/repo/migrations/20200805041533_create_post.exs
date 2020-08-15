@@ -5,6 +5,8 @@ defmodule Blog.Repo.Migrations.CreatePost do
     create table(:posts) do
       add :title, :string
       add :body, :text
+
+      timestamps()
     end
   end
 end
